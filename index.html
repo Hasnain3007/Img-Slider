@@ -12,16 +12,17 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
         * {
-            border: 1px solid red;
+            /* border: 1px solid red; */
         }
 
-        img {
-            width: 100%;
+        .row {
+            /* width: 100%; */
             height: 600px;
 
         }
 
-        .col-1 {
+        .col-1,
+        .col-10 {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -43,14 +44,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-1"></div>
-                <div class="col-10"></div>
+                <div class="col-10"> <img src="./img/2.jpg" alt="" id="img" class="img-fluid"></div>
                 <div class="col-1"></div>
             </div>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-1"><button id="left" class="" onclick="leftbutton()">&#60;</button></div>
-                <div class="col-10"><img id="image" src="./img/2.jpg" alt=""></div>
+                <div class="col-10"><img id="image" src="./img/2.jpg" alt="" class="img-fluid"></div>
                 <div class="col-1"><button id="right" onclick="rightbutton()">&gt;</button></div>
             </div>
         </div>
